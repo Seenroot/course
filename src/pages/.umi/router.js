@@ -28,6 +28,21 @@ const routes = [
         "exact": true
       },
       {
+        "path": "/list",
+        "component": require('../list').default,
+        "exact": true
+      },
+      {
+        "path": "/css-modules-with-less",
+        "component": require('../css-modules-with-less').default,
+        "exact": true
+      },
+      {
+        "path": "/css-modules-with-antd",
+        "component": require('../css-modules-with-antd').default,
+        "exact": true
+      },
+      {
         "path": "/dashboard",
         "routes": [
           {
