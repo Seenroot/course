@@ -43,6 +43,21 @@ const routes = [
         "exact": true
       },
       {
+        "path": "/fetchUpload",
+        "component": require('../upload/fetchUpload').default,
+        "exact": true
+      },
+      {
+        "path": "/antdUpload",
+        "component": require('../upload/antdUpload').default,
+        "exact": true
+      },
+      {
+        "path": "/fetchDownload",
+        "component": require('../download/fetchDownload').default,
+        "exact": true
+      },
+      {
         "path": "/dashboard",
         "routes": [
           {

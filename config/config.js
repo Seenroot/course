@@ -38,6 +38,18 @@ export default {
         component: '../pages/css-modules-with-antd'
       },
       {
+        path: 'fetchUpload',
+        component: '../pages/upload/fetchUpload'
+      },
+      {
+        path: 'antdUpload',
+        component: '../pages/upload/antdUpload'
+      },
+      {
+        path: 'fetchDownload',
+        component: '../pages/download/fetchDownload'
+      },
+      {
         path: '/dashboard',
         routes: [
           { path: '/dashboard/analysis', component: 'Dashboard/Analysis' },
