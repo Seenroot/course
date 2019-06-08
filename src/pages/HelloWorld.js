@@ -1,5 +1,9 @@
 import myStyles from './styles.css';
 import { Card } from 'antd';
+import {
+  FormattedMessage,
+  formatMessage
+} from 'umi/locale';
 
 export default () => {
   const style = {
@@ -12,6 +16,7 @@ export default () => {
   return (
     <div>
       <div className={myStyles.hello}>Hello World</div>
+      <div><FormattedMessage id="helloworld" /></div>
       <Card style={style} actions={[<a>操作一</a>, <a>操作二</a>]}>
         <Card.Meta
           avatar={<img 

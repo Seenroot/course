@@ -3,7 +3,7 @@ import { Router as DefaultRouter, Route, Switch } from 'react-router-dom';
 import dynamic from 'umi/dynamic';
 import renderRoutes from 'umi/_renderRoutes';
 import history from '@tmp/history';
-
+import RendererWrapper0 from '/Users/jean/antd-course/src/pages/.umi/LocaleWrapper.jsx'
 
 const Router = require('dva/router').routerRedux.ConnectedRouter;
 
@@ -110,8 +110,10 @@ export { routes };
 
 export default function RouterWrapper() {
   return (
-<Router history={history}>
+<RendererWrapper0>
+          <Router history={history}>
       { renderRoutes(routes, {}) }
     </Router>
+        </RendererWrapper0>
   );
 }
